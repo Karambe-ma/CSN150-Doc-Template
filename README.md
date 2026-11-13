@@ -30,9 +30,12 @@ The purpose of this project is to set up the ESP32-CAM using Arduino IDE on my M
 5. I selected AI Thinker ESP32-CAM as my board.
 6. I connected my ESP32-CAM to my MacBook using a USB cable.
 7. I selected the USB serial port in Arduino IDE.
-8. I uploaded a test sketch to the ESP32-CAM. The output ended with "Hard resetting via RTS pin."
+8. I uploaded a test sketch to the ESP32-CAM. The output ended with "Hard resetting via RTS pin.
+9. uploaded the Blink sketch and saw hard resetting via RTS pin.
+10. I changed the delay number in the code. Smaller numbers like 200 make it blink faster. Bigger          numbers like 2,000 make it blink slower.
 ## Problems and Solutions
-  I could not find AI Thinker ESP32-CAM in the board list. I opened Boards Manager, installed esp32 by Espressif Systems, and then the board appeared.
+1. I could not find AI Thinker ESP32-CAM in the board list. I opened Boards Manager, installed esp32      by Espressif Systems, and then the board appeared.
+2. 
 
 **Problem:** E (485) camera: Camera probe failed with error 0x105(ESP_ERR_NOT_FOUND)
 Camera init failed with error 0x105
