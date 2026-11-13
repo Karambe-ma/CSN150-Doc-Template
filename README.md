@@ -1,10 +1,13 @@
 # Cybersecurity : CSN150
-Project: ESP32 XXXXXXXX
+Project: ESP32-CAM Setup and Wi-Fi Scanner
 
 ## Purpose
-Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner". 
+The purpose of this project is to set up the ESP32-CAM using Arduino IDE on my MacBook. I will use the Wi-Fi Scanner program to find nearby Wi-Fi networks and learn how the ESP32-CAM works.
 
 ## Equipment
+## breadboard
+## jumper wires
+## MacBook with Arduino IDE installed
 * [ESP32Cam](https://www.amazon.com/Aideepen-ESP32-CAM-Bluetooth-ESP32-CAM-MB-Arduino/dp/B08P2578LV/ref=sr_1_3?crid=4FY0ECFW0ZX7&keywords=ESP32+Cam&qid=1678902050&sprefix=esp32+cam%2Caps%2C240&sr=8-3)
 
 * [USB Micro Data Cable](https://www.amazon.com/AmazonBasics-Male-Micro-Cable-Black/dp/B0711PVX6Z/ref=sr_1_1_sspa?keywords=micro+usb+data+cable&qid=1678902214&sprefix=Micro+USB+data+%2Caps%2C89&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFaU0NaUVZHU1RFUlAmZW5jcnlwdGVkSWQ9QTA3NTA4MDVFVERCS01HVlgxM1YmZW5jcnlwdGVkQWRJZD1BMDE4NTE1NTIwWUdONkdWSzU1M1Amd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl)
@@ -15,13 +18,21 @@ Set up ESP32 and Arduino enviornment. Execute sketch " Wifiscanner".
 
 ##### Other Links: 
 
+- [Arduino IDE Download](https://www.arduino.cc/en/software/)
+
 ##### AI GPTs used
 
 ## Steps I followed
-1. Write the steps you followed here.  This way you can keep track of where you might have messed up if the project does not work. 
-
+1. I opened GitHub and forked my professor's repository.
+2. I edited the README file to document my ESP32-CAM project.
+3. I opened Arduino IDE on my MacBook and updated it to version 2.3.11.
+4. I installed the ESP32 board package by Espressif Systems.
+5. I selected AI Thinker ESP32-CAM as my board.
+6. I connected my ESP32-CAM to my MacBook using a USB cable.
+7. I selected the USB serial port in Arduino IDE.
+8. I uploaded a test sketch to the ESP32-CAM. The output ended with "Hard resetting via RTS pin."
 ## Problems and Solutions
-Note your problems or errors here.  Google any error you may come across, and not what you tried (even if it does not work), and what was the final answer. Document your errors and solutions that worked for you.  
+  I could not find AI Thinker ESP32-CAM in the board list. I opened Boards Manager, installed esp32 by Espressif Systems, and then the board appeared.
 
 **Problem:** E (485) camera: Camera probe failed with error 0x105(ESP_ERR_NOT_FOUND)
 Camera init failed with error 0x105
