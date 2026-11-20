@@ -33,14 +33,31 @@ The purpose of this project is to set up the ESP32-CAM using Arduino IDE on my M
 8. I uploaded a test sketch to the ESP32-CAM. The output ended with "Hard resetting via RTS pin.
 9. uploaded the Blink sketch and saw hard resetting via RTS pin.
 10. I changed the delay number in the code. Smaller numbers like 200 make it blink faster. Bigger          numbers like 2,000 make it blink slower.
+## ESP32-CAM Camera Setup
+### Project Description
+In this lab, I installed the camera software on my ESP32-CAM using Arduino IDE. I connected the camera to my Wi-Fi network and opened the camera page in Safari. I tested the live video and successfully saw myself on the screen.
+
+### Steps I Followed
+1. I connected my ESP32-CAM to my MacBook using a USB cable.
+2. I opened Arduino IDE and selected AI Thinker ESP32-CAM.
+3. I opened the CameraWebServer example.
+4. I selected the AI Thinker camera model in board_config.h.
+5. I entered my Wi-Fi name and password in the code.
+6. I uploaded the camera program to my ESP32-CAM.
+7. I opened Serial Monitor and set the baud rate to 115200.
+8. I copied the camera IP address and opened it in Safari.
+9. I clicked Start Stream and tested the camera.
+10. I successfully saw myself on the camera screen.
 ## Problems and Solutions
-1. I could not find AI Thinker ESP32-CAM in the board list. I opened Boards Manager, installed esp32      by Espressif Systems, and then the board appeared.
-2. 
+1. I could not find AI Thinker ESP32-CAM in the board list.
+2. I opened Boards Manager, installed esp32      by Espressif Systems, and then the board appeared.
 
 **Problem:** E (485) camera: Camera probe failed with error 0x105(ESP_ERR_NOT_FOUND)
 Camera init failed with error 0x105
 **Solution:**
+### Results
 
+I successfully installed the camera firmware on my ESP32-CAM. The camera connected to my Wi-Fi network, and I opened the CameraWebServer page in Safari. I clicked Start Stream and saw live video of myself. The camera worked successfully.
 ### Example Problem
 **Problem:** Arduino code will not load on ESP32 Cam.
 **Solution:** Camera drivers were incorrect I needed to install the driver: [https://www.wch-ic.com/downloads/CH341SER_ZIP.html](https://github.com/martin-ger/esp32_nat_router).  I used file, "CH341SER.ZIP" and it worked.
